@@ -1,16 +1,84 @@
 	\large \bf{\textsc{\section{Lab 2}}
 	\begin{problem}
-		Problem 1 here.
+		In this exercise, we would like to build a thermometer using an NTC sensor. The NTC sensor is a resistance that decreases when the temperature increases. Choose an NTC sensor with nominal value of 10K\(\Omega\) (usually given at 25\(\deg\)).
+		\newline
+		1. Measure the resistance of the NTC using a multimeter at the room temperature (don't touch the sensor when measuring). Let's assume that the room temperature is about 22 \(\deg\).
+		\newline
+		2. Measure the resistance of the NTC using a multimeter while you keep the sensor in your hands for about 30 seconds. Let's assume that your hands has the temperature of about 35 \(\deg\).
+		\newline
+		3. Build the following circuit with: \\
+		R\(_{1}\): 10K\(\Omega\)(NTC sensor) \\
+		R\(_{2}\): 10K\(\Omega\) \\
+		R\(_{3}\): 4.7K\(\Omega\) \\
+		R\(_{4}\): 1.8K\(\Omega\) \\
+		V: 1.45V
+		\newline
+		4. Calculate the voltage of V\(_{OC}\) for two cases (room temperature and the hand temperature).
+		\newline
+		5. Measure the voltage of V\(_{OC}\) for two cases and compare the results with your calculations.
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.5\textwidth]{images/circuit7.png}
+		\end{figure}
 	\end{problem}
 	
 	\begin{solution}
-		Solution goes here.
+		1.
+		\newline
+		2.
+		\newline
+		3.
+		\newline
+		4.
+		\newline
+		5.
 	\end{solution}
 	
 	\begin{problem}
-		Problem 1 here.
+		In the above circuit, remove the sensor and use R\(_{1}\)=1K\(\Omega\), R\(_{2}\)=100K\(\Omega\) and V=20V. Calculate their equivalent resistance.
+		\newline
+		1. Obtain the Thevenin equivalent of the circuit by experiment. Hint: open circuit voltage and zero input resistance.
+		\newline
+		2. Calculate the Thevenin equivalent of the circuit and compare the results.
+		\newline
+		3. Obtain the Nortin equivalent of the circuit by experiment. Hint: short circuit current and zero input resistance.
+		\newline
+		4. Calculate the Nortin equivalent of the circuit and compare the results.
 	\end{problem}
 	
 	\begin{solution}
-		Solution goes here.
+		1.
+		\newline
+		2.
+		\newline
+		3.
+		\newline
+		4.
+	\end{solution}
+	
+	\begin{problem}
+		Now we would like to connect a resistor to the output port of the previous circuit.
+		\newline
+		1. Using the Thevenin equivalent, find the smallest possible resistor for the output port such that the current in the resistor remains less than 1mA.
+		\newline
+		2. Find and connect the resistance that maximizes the power consumption in the output port.
+		\newline
+		3. Try several resistors that are higher or lower than your findings, then fill the following table and plot the power curve for a variation of resistors. Compare the results with your calculations.
+	\end{problem}
+	
+	\begin{solution}
+		1.
+		\newline
+		2.
+		\newline
+		3.
+		\begin{table}[h]
+			\begin{tabular}{| l | l | l | l | l | l | l | l | l | l | l | l |}
+				\hline
+				\textbf{Try} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \hline
+				Resistance (Ohms) & & & & & & R\(_{max pow}\) & & & & & \\ \hline
+				Voltage (V) & & & & & & & & & & & \\ \hline
+				Power (mW) & & & & & & & & & & & \\ \hline
+			\end{tabular}
+		\end{table}
 	\end{solution}
