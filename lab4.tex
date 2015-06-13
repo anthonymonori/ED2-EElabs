@@ -7,11 +7,32 @@
 	\end{problem}
 	
 	\begin{solution}
-		1. 
-		\newline
-		2. z = 3(x-y)
+		1. R$_{1}$= 1.8k\(\Omega\), R$_{2}$= 8.2k\(\Omega\), R$_{3}$= 1.8k\(\Omega\), Gain = 0.2, v$_{1}$= 5V, v$_{2}$= 5V
 		
-		x = 5V, y = 3V => 2*3=6V
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.4\textwidth]{images/circuit411.jpg}
+		\end{figure}
+		
+		This is an adder, therefore we used the following formula:
+		\newline
+		v$_{o}$\(\approx\)$-(R_{3}/R_{1}*v_{1} + R_{3}/R_{2}*v_{2})$
+		
+		
+		$-((1.8/1.8)*5+(1.8/8.2)*5)=-6$
+\\ \\ \\
+		2. R$_{1}$=R$_{3}$= 3.3k\(\Omega\), R$_{2}$=R$_{4}$ 10k\(\Omega\), Gain = 3, v$_{1}$= 5V, v$_{2}$= 3V
+		
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.4\textwidth]{images/circuit412.jpeg}
+		\end{figure}
+		
+		This was a subtracter, therefore we used the following formula:
+		\newline
+		$v_{o}=(R_{2}/R_{1})*(v_{2}-v_{1})$
+		
+		$(10/3.3)*(3-5)=-6$
 	\end{solution}
 	\clearpage
 	\begin{problem}
@@ -57,7 +78,7 @@
 			\end{tabular}
 		\end{table}
 		\newline
-		4.
+		4.The trend function of the chart 4.2.4 is $y = 1.582 * x + 1.818$, therefore we can calculate R$_{ON}$ is 1/1.818\(\approx\)0.6 which is the half of what the datasheet says. The R$_{ON}$, also called R$_{DS}$ on the datasheet, is 1.2 \(\Omega\) with a 10V drain-source and 200mA i$_{DS}$. Because we use 5V, instead of 10V, we find the obtained R$_{ON}$ data acceptable and within limits.
 		\newline
 		\begin{figure}[h!]
 			\begin{subfigure}[H]{0.5\textwidth}
