@@ -86,5 +86,5 @@
 	\begin{solution}
 		1. -R\(_{f}\)/R\(_{in}\)*1.5=-2,97V, R\(_{f}\)=5.6K\(\Omega\) and R\(_{in}\)= 11.1K\(\Omega\). We measured -3.188V. The error comes from the resistors not giving a gain that is exactly 2, plus that the resistors are not exactly their given resistance. Adding up those errors should come close to difference in calculation and measurement.
 		\newline
-		2.  V\(_{o}\)= 1.7V rms. It should have been 1.4V rms. The error in measurement could have come from our setup and our inexperience with the use of oscilloscope.
+		2.  V\(_{o}\)= 1.7V rms. It should have been 1.4V rms. The error in measurement could have come from our setup and our 
 	\end{solution}
