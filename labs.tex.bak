@@ -1,0 +1,90 @@
+% A basic LaTeX document for an assignment
+
+% If you want the title to appear on a separate
+% page, change notitlepage to titlepage
+\documentclass[11pt,a4paper,notitlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% If your hand-in is in icelandic change english to icelandic
+% Note: This has nothing to do with Icelandic characters, they
+% can always be used. This just tells other packages what 
+% language you are using and changes the hyphenation used by LaTeX
+% If icelandic is selected, a shorthand, "` and "', is also included
+% for Icelandic quotation marks. They can also obtained by using 
+% ,, and ``
+\usepackage[english]{babel}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{graphicx}
+\usepackage{enumerate}
+% To use the whole A4-page
+% See: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/geometry/geometry.pdf
+% and http://en.wikibooks.org/wiki/LaTeX/Document_Structure
+\usepackage{geometry}
+% For header and footer
+% See: ftp://ctan.tug.org/tex-archive/macros/latex/contrib/fancyhdr/fancyhdr.pdf
+% and http://en.wikibooks.org/wiki/LaTeX/Document_Structure
+\usepackage{fancyhdr}
+% For prettier tables
+% See: http://ctan.mackichan.com/macros/latex/contrib/booktabs/booktabs.pdf
+% and  http://en.wikibooks.org/wiki/LaTeX/Tables
+\usepackage{booktabs}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% SETUP %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Set the margins of the paper. By default LaTeX uses huge margins
+\geometry{includeheadfoot, margin=2.5cm}
+% you can also use
+% \geometry{a4paper}
+% End of margins setup
+
+% Setup header and footer
+% Headers
+\pagestyle{fancy} % To get the header and footer
+\lhead{\small \textsc{Lab Exercises}}
+\rhead{\small \textsc{Introduction to Electronic Engineering}}
+% Footers
+%\lfoot{Left footer text}
+%\cfoot{\thepage} % This is the default behaviour
+%\rfoot{Right footer text}
+
+% If you don't want a line below the header or above the footer, 
+% change the appropriate header/footerrulewidth to 0pt
+\setlength{\headheight}{15.2pt} % This is set to avoid a warning
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+% End of header and footer setup
+
+% Setup Problem/Solution environments
+\theoremstyle{plain}
+\newtheorem{problem}{Problem}[section]
+
+\theoremstyle{remark}
+\newtheorem*{solution}{Solution}
+% End of Problem/Solution environments setup
+
+%%%%%%%%%%%%%%%%%%%%%%%% END OF SETUP %%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{{\large \bf \MakeUppercase{Introduction to Electronic Engineering}} \\
+		\large \textsc{Lab exercises}}
+
+\author{\textsc{\small Antal János Monori \& Emil Már Einarsson }}
+
+\begin{document}
+	\maketitle
+	
+	\input{lab1.tex}
+	
+	\pagebreak
+
+	\input{lab2.tex}
+	
+	\pagebreak
+	
+	\input{lab3.tex}
+	
+	\pagebreak
+	
+	\input{lab4.tex}
+\end{document}
+
