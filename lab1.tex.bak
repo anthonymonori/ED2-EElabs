@@ -31,11 +31,11 @@
 			\centering
 			\includegraphics[width=0.5\textwidth]{images/ivplot.png}
 		\end{figure}
-		
-		The slope is:
-		%$ (47 mA-29 mA)/(6.92 V-4.3 V)=6.87 mA/V $
+	
 		
 	\end{solution}
+	The slope is:
+		$ (47 mA-29 mA)/(6.92 V-4.3 V)=6.87 mA/V $
 	\clearpage
 	\begin{problem}
 		Choose the following resistors and construct each circuit given in the figure. \\

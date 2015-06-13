@@ -8,12 +8,11 @@
 		1. Measure the diode and resistor voltage and current when changing the resistor R and fill the table
 		\newline
 		2. Plot the I-V characteristics  of the diode as well as the resistor. Are all measurements on one line? Are the components linear? Compare the diode i-v plot with the datasheet.
-		\iffalse
-			\begin{figure}[h!]
-				\centering
-				\includegraphics[width=0.5\textwidth]{images/circuit1.png}
-			\end{figure}
-		\fi
+		
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.5\textwidth]{images/circuit1.png}
+		\end{figure}
 	\end{problem}
 	
 	\begin{solution}
@@ -52,30 +51,20 @@
 		4. Compare the measurements with your calculations
 		\newline
 		5. (Optional) Use a 470\(\mu\)F capacitor in parallel with R\(_{L}\) and measure the output voltage.
-		\iffalse
-			\begin{figure}[h!]
-				\centering
-				\includegraphics[width=0.5\textwidth]{images/circuit2.png}
-			\end{figure}
-		\fi
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.5\textwidth]{images/circuit2.png}
+		\end{figure}
 	\end{problem}
 	
 	\begin{solution}
 		2. We measured it to be 14.3V and current to be 1.28mA
-		\begin{figure}[h!]
-			\centering
-			\includegraphics[width=0.5\textwidth]{images/plot323.jpg}
-		\end{figure}
 		\newline
 		3. The oscilloscope measured 19.2V and the multimeter 12V
 		\newline
 		4.
 		\newline
 		5. We measured R\(_{L}\) to be 18.37 and a constant DC. Resistor is big = uses small current and the "tank" is full.
-		\begin{figure}[h!]
-			\centering
-			\includegraphics[width=0.5\textwidth]{images/plot325.jpg}
-		\end{figure}
 	\end{solution}
 	\clearpage
 	\begin{problem}
@@ -97,5 +86,5 @@
 	\begin{solution}
 		1. -R\(_{f}\)/R\(_{in}\)*1.5=-2,97V, R\(_{f}\)=5.6K\(\Omega\) and R\(_{in}\)= 11.1K\(\Omega\). We measured -3.188V. The error comes from the resistors not giving a gain that is exactly 2, plus that the resistors are not exactly their given resistance. Adding up those errors should come close to difference in calculation and measurement.
 		\newline
-		2.  V\(_{o}\)= 1.7V rms. It should have been 1.4V rms. The error in measurement could have come from our setup and our inexperience with the use of oscilloscope.
+		2.  V\(_{o}\)= 1.7V rms. It should have been 1.4V rms. The error in measurement could have come from our setup and our 
 	\end{solution}
