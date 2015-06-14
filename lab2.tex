@@ -1,10 +1,10 @@
 	\large \bf{\textsc{\section{Lab 2}}
 	\begin{problem}
-		In this exercise, we would like to build a thermometer using an NTC sensor. The NTC sensor is a resistance that decreases when the temperature increases. Choose an NTC sensor with nominal value of 10K\(\Omega\) (usually given at 25\(\deg\)).
+		In this exercise, we would like to build a thermometer using an NTC sensor. The NTC sensor is a resistance that decreases when the temperature increases. Choose an NTC sensor with nominal value of 10K\(\Omega\) (usually given at 25$^\circ$C.
 		\newline
-		1. Measure the resistance of the NTC using a multimeter at the room temperature (don't touch the sensor when measuring). Let's assume that the room temperature is about 22 \(\deg\).
+		1. Measure the resistance of the NTC using a multimeter at the room temperature (don't touch the sensor when measuring). Let's assume that the room temperature is about 22$^\circ$C.
 		\newline
-		2. Measure the resistance of the NTC using a multimeter while you keep the sensor in your hands for about 30 seconds. Let's assume that your hands has the temperature of about 35 \(\deg\).
+		2. Measure the resistance of the NTC using a multimeter while you keep the sensor in your hands for about 30 seconds. Let's assume that your hands has the temperature of about 35$^\circ$C.
 		\newline
 		3. Build the following circuit with: \\
 		R\(_{1}\): 10K\(\Omega\)(NTC sensor) \\
@@ -16,22 +16,41 @@
 		4. Calculate the voltage of V\(_{OC}\) for two cases (room temperature and the hand temperature).
 		\newline
 		5. Measure the voltage of V\(_{OC}\) for two cases and compare the results with your calculations.
+		\iffalse
 		\begin{figure}[h!]
 			\centering
 			\includegraphics[width=0.5\textwidth]{images/circuit7.png}
 		\end{figure}
+		\fi
 	\end{problem}
 	
 	\begin{solution}
-		1.
+		1. The resistance of the NTC is 10.98 k \(\Omega\) with the room temperature at about 22$^\circ$C.
 		\newline
-		2.
+		2. The resistance of the NTC is 7.22 k \(\Omega\) when held by hand at about 35$^\circ$C.
 		\newline
-		3.
+		3. We did the circuit in the Electrical lab.
 		\newline
-		4.
+		4. To calculate the V$_{OC}$ we need to simplify the circuit using Thevenin Theorem. In the first case, we look at room temperature, where R$_{1}=10.98$k\(\Omega\).
+		
+		$R_{13}=(10.98*4.7)/(10.98+4.7)\approx3.29k\Omega$
+		
+		$R_{24}=(10*1.8)/(10+1.8)\approx1.52k\Omega$
+		
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=0.3\textwidth]{images/circuit214.jpg}
+		\end{figure}
+		
+		$V_{OC}=V_{TH}=V*(R_{24}/(R_{13}+R_{24}))=1.45*(1.52/(3.29+1.52))\approx0.45V$
+		\\
+		In the other case, where we look at hand temperature, $R_{1}=7.22k\Omega$ and therefore the only resistance that changes is $R_{13}$ in our simplified version of the circuit:
+		
+		$R_{13}\approx2.84k\Omega$
+		
+		$V_{OC}\approx0.77V$
 		\newline
-		5.
+		5. At room temperature V$_{OC}$ is 303 mV and at hand temperature it is 433 mV.
 	\end{solution}
 	\clearpage
 	\begin{problem}
@@ -76,9 +95,10 @@
 			\begin{tabular}{| l | l | l | l | l | l | l | l | l | l | l | l |}
 				\hline
 				\textbf{Try} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\ \hline
-				Resistance (Ohms) & & & & & & R\(_{max pow}\) & & & & & \\ \hline
-				Voltage (V) & & & & & & & & & & & \\ \hline
-				Power (mW) & & & & & & & & & & & \\ \hline
+				Resistance (Ohms) & 1.20k & 1.74k & 1.49k & 0.66k & 98 & R\(_{max pow}\) & 2.30k & 2.60k & 2.98k & 5.46k & - \\ \hline
+				Voltage (V) & 4.9 & 6.16 & 5.61 & 3 & 0.59 & 0.7 & 7.1 & 7.58 & 8.04 & 10 & - \\ \hline
+				Power (mW) & & & & & & & & & & & - \\ \hline
 			\end{tabular}
 		\end{table}
+		R$_{maxpow}=2.27k\Omega$
 	\end{solution}
