@@ -7,11 +7,7 @@
 		2. Measure the resistance of the NTC using a multimeter while you keep the sensor in your hands for about 30 seconds. Let's assume that your hands has the temperature of about 35$^\circ$C.
 		\newline
 		3. Build the following circuit with: \\
-		R\(_{1}\): 10K\(\Omega\)(NTC sensor) \\
-		R\(_{2}\): 10K\(\Omega\) \\
-		R\(_{3}\): 4.7K\(\Omega\) \\
-		R\(_{4}\): 1.8K\(\Omega\) \\
-		V: 1.45V
+		R\(_{1}\): 10K\(\Omega\)(NTC sensor), R\(_{2}\): 10K\(\Omega\), R\(_{3}\): 4.7K\(\Omega\), R\(_{4}\): 1.8K\(\Omega\), V: 1.45V
 		\newline
 		4. Calculate the voltage of V\(_{OC}\) for two cases (room temperature and the hand temperature).
 		\newline
@@ -50,7 +46,7 @@
 		
 		$V_{OC}\approx0.77V$
 		\newline
-		5. At room temperature V$_{OC}$ is 303 mV and at hand temperature it is 433 mV.
+		5. At room temperature V$_{OC}$ is 303 mV and at hand temperature it is 433 mV. These numbers seem off to our calculations as we got $V_{OC}$ to be 450 mV at room temperature and 770 mV at hand temperature.
 	\end{solution}
 	\clearpage
 	\begin{problem}
@@ -68,15 +64,22 @@
 	\begin{solution}
 		1.After creating the Thevenin equivalent of the above circuit in the lab, we got the following results:
 		
-		$V_{TH}=20V$, $R_{TH}=6.07k\Omega$
+		$V_{TH}=14.27V$, $R_{TH}=6.07k\Omega$
 		\newline
-		2.
+		2. 
+		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=1\textwidth]{images/calc222.jpg}
+		\end{figure}
 		\newline
 		3.After creating the Norton equivalent of the above circuit in the lab, we got the following results:
 		
-		$V_{N}=14.27V$, $R_{N}=2.27k\Omega$, $I_{N}=6.28mA$
+		$V_{TH}=14.25V$, $R_{NO}=2.27k\Omega$, $I_{NO}=6.28mA$
 		\newline
-		4.
+		4. We know that $R_{NO}=R_{TH}$ and that $I_{NO}=V_{TH}/R_{TH}$, therefore by taking the values from exercise number 2, we get the following values:
+		
+		$R_{NO}=2.68k\Omega$ and $I_{NO}=13.13/2.68=4.89mA$
+		
 	\end{solution}
 	\clearpage
 	\begin{problem}
@@ -94,9 +97,14 @@
 		
 		$V/(R_{TH}+R_{L})<1mA$
 		
-		So by knowing $R_{TH}$ to be 2.27k$\Omega$:		
+		So by knowing $R_{TH}$ to be 2.27k$\Omega$, we calculated:
+		$x*((2.27*R_{L})/(2.27+R_{L}))= 14.27V$
+		
+		$1=14.27/2.27+x => x=12k\Omega$	
+		
+		Answer: 12k$\Omega$ resistor is the smallest possible one for it to remain < 1mA.
 		\newline
-		2.
+		2. $R_{L}=R_{TH}=2.27k\Omega$
 		\newline
 		3.
 		\begin{table}[h]
@@ -114,8 +122,10 @@
 		
 		$P=V^2/R$
 		
+		After doing the experiment we realised that $R_{2}$ and $R_{3}$ flipped all along exercise 3.
+		
 		\begin{figure}[h!]
 			\centering
-			\includegraphics[width=0.5\textwidth]{images/plot233.png}
+			\includegraphics[width=0.8\textwidth]{images/plot233.png}
 		\end{figure}
 	\end{solution}
